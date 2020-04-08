@@ -1,0 +1,74 @@
+/* Base Styles */
+body{
+
+    text-align: center;
+    font-size: medium;
+    background-color: whitesmoke;
+    
+
+}
+p{
+    color: white;
+}
+ button{
+     background-color: royalblue;
+ }
+
+
+ /* Layout Styles */
+.header{
+ background-color: navy;  
+
+}
+
+.main_section{
+    background-color: navy;
+}
+
+.quote_1{
+    display: flex;
+}
+.quote_2{
+    display:flex;
+}
+
+
+/* Block Styles */
+.design{
+color: white;
+}
+
+.reviews{
+    background-color: navy;
+
+}
+
+.programs{
+background-color: navy;
+color: whitesmoke;
+}
+
+.call_to_action{
+
+background-color:navy
+}
+
+.details{
+    background-color: navy;
+}
+
+.staff{
+    background-color: navy;
+
+}
+
+.students{
+    background: navy;
+
+}
+
+.footer{
+
+    background: navy;
+
+}
