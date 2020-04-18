@@ -1,0 +1,103 @@
+/* Base Styles */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+
+    text-align: center;
+    font-size: medium;
+    background-color: whitesmoke;
+    display: grid;
+    display: inline-grid;
+    
+
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 180px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "design design";
+}
+
+.design{
+    grid-area: design;
+}
+
+.grid div:nth-child(even){
+    background-color: rgb(15, 8, 121);
+}
+.grid div:nth-child(odd){
+    background-color: rgb(228, 227, 238);
+}
+p{
+    color: black;
+}
+ button{
+     background-color: whitesmoke;
+ }
+
+
+ /* Layout Styles */
+.header{
+ background-color: whitesmoke;  
+
+}
+
+.main_section{
+    background-color: rgb(151, 243, 238);
+    color:black;
+}
+
+.quote_1{
+    color: whitesmoke;
+  
+}
+.quote_2{
+    color: whitesmoke;
+   
+}
+
+
+/* Block Styles */
+.design{
+color: black;
+}
+
+.reviews{
+    background-color: whitesmoke;
+
+}
+
+.programs{
+background-color: whitesmoke;
+color: whitesmoke;
+
+}
+
+.coa{
+
+color:whitesmoke;
+}
+
+.details{
+    background-color: whitesmoke;
+}
+
+.staff{
+    background-color: whitesmoke;
+
+}
+
+.students{
+    background: whitesmoke;
+
+}
+
+.footer{
+
+    background: rgb(151, 243, 238);
+
+}
