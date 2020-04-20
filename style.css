@@ -1,17 +1,20 @@
+/* Base Styles */
 :root {
+
   --font-family: 'Manrope', sans-serif;
   --text-color:grey;
   --font-size:3em;
-    background: rgb(12, 12, 85);
+   --background: rgb(39, 39, 100);
   
 }
 .kenzie_logo{
   display:flex;
-  justify-content: left;
+  justify-content:center;
+  align-items: center;
 }
 
 .container {
-  background-color: whitesmoke;
+  background-color:whitesmoke;
 }
 
 body {
@@ -24,28 +27,30 @@ body {
 h1 {
  
   font-size: 5em;
-  color:black;
+  color:whitesmoke;
   display:flex;
   justify-content: center;
   
 }
 h2{
   font-size: var(--font-size);
-  color:black;
+  color:whitesmoke;
+  background-color: var(--background)
 }
 
 p{
   font-weight: 10px;
-  font-size: 1em;
-}
-h1, p{
+  font-size: 2em;
   text-align:center;
+  color: gray;
+
 
 }
 video{
   display:flex;
   justify-content: center;
 }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -65,10 +70,55 @@ nav li {
   background-color: whitesmoke;
 }
 
-.blue-button .signup, input[type=submit] {
-  background-color: lightgrey;
+.blue-button .signup, input[type=submit]{
+  background-color: grey;
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.read-our-story{
+  background-color: grey;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+}
+.oneb, .twob, .threeb{
+    background-color: grey;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+  
+}
+
+.compare_button{
+  background-color: grey;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+
+}
+.schedule_button{
+  background-color: grey;
+  text-decoration: none;
+  color: whitesmoke;
   padding: 0.5em;
   border-radius: 6px;
   width: 100%;
@@ -77,16 +127,28 @@ nav li {
 }
 
 /* Layout styles */
-/* Block styles */
 .hero {
   width: 100%;
   display:flex;
   flex-direction:column;
   justify-content: center;
-  background-color: whitesmoke;
+  color: whitesmoke;
   text-align:center;
- 
+  background-color:var(--background) ;
+  transition: opacity 0.5s ease-in;
 }
+
+.quote{
+  display:flex;
+  flex-direction: row;
+  margin: 6rem;
+
+}
+.reviews{
+  color: grey;
+}
+/* Block styles */
+
 
 .video {
  
@@ -98,7 +160,6 @@ nav li {
 
 .name {
    display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
@@ -116,11 +177,12 @@ nav li {
   display:flex;
   flex-direction:column;
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
   padding: 6em;
   border-radius: 6rem;
-  width: 8em;
+  width: 7em;
   text-align: center;
+  
 
 }
 
@@ -134,4 +196,27 @@ nav li {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+.students{
+  justify-content: center;
+  margin: 30%;
+}
+
+.lets-chat{
+  justify-content: center;
+  margin: 30%;
+
+}
+.form_container,.meet_kenzie,.coa{
+  background-color: var(--background);
+  width: 100%;
+  
+}
+
+.meet_kenzie_message, .meet_kenzie_message_two{
+  color:gray
+  
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
