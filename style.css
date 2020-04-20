@@ -1,101 +1,137 @@
-/* Base Styles */
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --text-color:grey;
+  --font-size:3em;
+    background: rgb(12, 12, 85);
+  
+}
+.kenzie_logo{
+  display:flex;
+  justify-content: left;
+}
+
+.container {
+  background-color: whitesmoke;
 }
 
 body {
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+
+h1 {
+ 
+  font-size: 5em;
+  color:black;
+  display:flex;
+  justify-content: center;
+  
+}
+h2{
+  font-size: var(--font-size);
+  color:black;
+}
+
+p{
+  font-weight: 10px;
+  font-size: 1em;
+}
+h1, p{
+  text-align:center;
+
+}
+video{
+  display:flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.blue-button {
+  background-color: whitesmoke;
+}
+
+.blue-button .signup, input[type=submit] {
+  background-color: lightgrey;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 100%;
   text-align: center;
-  font-size: medium;
+  display: inline-block;
+}
+
+/* Layout styles */
+/* Block styles */
+.hero {
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
   background-color: whitesmoke;
-  display: -ms-grid;
-  display: grid;
-  display: -ms-inline-grid;
-  display: inline-grid;
+  text-align:center;
+ 
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 180px;
-      grid-template-columns: 1fr 180px;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "design design";
+.video {
+ 
+  display: flex;
+  justify-content: center;
+  width:560;
+  
 }
 
-.design {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: design;
+.name {
+   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.grid div:nth-child(even) {
-  background-color: #0f0879;
+.signup {
+  width:30%;
+  margin:0 auto;
+  padding-bottom:4em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5em;
 }
 
-.grid div:nth-child(odd) {
-  background-color: #e4e3ee;
+.form_1{
+  display:flex;
+  flex-direction:column;
+  text-decoration: none;
+  color: white;
+  padding: 6em;
+  border-radius: 6rem;
+  width: 8em;
+  text-align: center;
+
 }
 
-p {
-  color: black;
-}
 
-button {
-  background-color: whitesmoke;
-}
+.form_2 {
 
-/* Layout Styles */
-.header {
-  background-color: whitesmoke;
-}
-
-.main_section {
-  background-color: #97f3ee;
-  color: black;
-}
-
-.quote_1 {
-  color: whitesmoke;
-}
-
-.quote_2 {
-  color: whitesmoke;
-}
-
-/* Block Styles */
-.design {
-  color: black;
-}
-
-.reviews {
-  background-color: whitesmoke;
-}
-
-.programs {
-  background-color: whitesmoke;
-  color: whitesmoke;
-}
-
-.coa {
-  color: whitesmoke;
-}
-
-.details {
-  background-color: whitesmoke;
-}
-
-.staff {
-  background-color: whitesmoke;
-}
-
-.students {
-  background: whitesmoke;
-}
-
-.footer {
-  background: #97f3ee;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6rem;
+  width: 5em;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
